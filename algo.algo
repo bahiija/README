@@ -1,0 +1,15 @@
+ALGORITHM count
+VAR
+    ch:=string;
+    i,voy,char,word:=integer;
+BEGIN
+    for i:=0 to pos(".".ch)
+    if ch[i]:=" " then
+    word:=word+1;
+    else if ch[i]:="a,A,e,E,y,Y,u,U,i,I"
+    voy:=voy+1;
+    else char:=char+1;
+    end-if;
+    end-for;
+    write("the number of characters is= ",char,"the number of voyels is= ",voy,"the number of words is= ",word);
+END
