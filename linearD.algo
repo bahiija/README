@@ -1,0 +1,33 @@
+ALGORITHM array
+VAR
+   set1,set2: array of integer [50];
+   sum:integer:=0;
+   c:boolean;
+   htab: HASH_TABLE<integer,integer>
+BEGIN
+    for i from 0 to set1.length-1 do 
+    v:=false;
+    for j from 0 to set2.length-1 do 
+    if (set1[i]=set2[j])then
+    v:=true; break;
+    end_if 
+    end_for
+    if v:=false then
+    sum:=sum+set1[i];
+    end_if
+    end_for
+    for j from 0 to set2.length-1 do 
+    v:=false;
+    for i from 0 to set1.length-1 do 
+    if(set1=set2) then 
+    v= true;break;
+    end_if
+    end_for
+    if v:= false then
+    sum:=sum+set2[j];
+   end_if 
+    end_for
+    f
+    for i from 0 to set1.length-1 do 
+    htab.insert()
+END

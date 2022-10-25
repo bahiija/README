@@ -1,0 +1,29 @@
+ALGORITHM htab
+VAR
+    set1,set3,set2: array of integer [10]
+    htab:HASH_TABLE <integer,integer>
+    i,count,sum:integer
+
+BEGIN
+    for i from 0 to set1.length-1 do
+    if (htab.lookup(set1[i]))=true then
+    count= hab.get(set1[i])
+    htab.insert(set1[i],count+1)
+    ELSE
+    htab.insert(set1[i],1)
+    end_if 
+    end_for
+     for i from 0 to set2.length-1 do
+    if (htab.lookup(set2[i]))=true then
+    count= hab.get(set2[i])
+    htab.insert(set2[i],count+1)
+    ELSE
+    htab.insert(set2[i],1)
+    end_if 
+    end_for
+   for i from 0 to set3.length-1 do
+   if (htab.get(set3[i])=1) then 
+   sum:=sum + set3[i];
+   end if 
+   end for
+END
